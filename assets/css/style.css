@@ -91,13 +91,22 @@ span{
     background-color: var(--bg-btn-success)
 }
 
+@media(min-width:482px) and (max-width: 767px){
+    form input{
+        width: 60vw;
+        font-size: 1.7rem;
+    }
+    form button{
+        font-size: 1.7rem
+    }
+}
 
 @media(min-width:320px) and (max-width: 480px){
     form input{
         width: 60vw;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
     form button{
-        font-size: 1.3rem
+        font-size: 1.4rem
     }
 }
