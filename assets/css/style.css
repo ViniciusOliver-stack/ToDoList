@@ -90,3 +90,14 @@ span{
 .check-btn{
     background-color: var(--bg-btn-success)
 }
+
+
+@media(min-width:320px) and (max-width: 480px){
+    form input{
+        width: 60vw;
+        font-size: 1.3rem;
+    }
+    form button{
+        font-size: 1.3rem
+    }
+}
