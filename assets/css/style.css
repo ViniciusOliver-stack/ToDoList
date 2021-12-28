@@ -40,8 +40,52 @@ button{
 span{
     transition: all .10s ease;
 }
+
+
+/*Formatando DOM JS*/
 .container{
     display: flex;
     justify-content:center;
     align-items:center;
+}
+.list-todo{
+    min-width: 30%;
+    list-style: none;
+    background-color: var(--bg-input);
+    border-radius: 15px;
+}
+.todo{
+    margin: 1rem;
+    padding: .5rem;
+    border-radius: 10px;
+    background-color: var(--bg);
+    font-size: 1.7rem;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo li{
+    flex: 1;
+    text-transform: capitalize;
+}
+
+.check-btn, .trash-btn{
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color:var(--bg-btn-trash);
+
+    border-radius: 50px;
+    margin-left: 1rem;
+}
+
+.todo-list{
+    padding: 0 1rem;
+}
+
+.check-btn{
+    background-color: var(--bg-btn-success)
 }
