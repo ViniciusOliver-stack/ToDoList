@@ -91,6 +91,11 @@ span{
     background-color: var(--bg-btn-success)
 }
 
+.completed{
+    text-decoration: line-through;
+    opacity: .5;
+}
+
 @media(min-width:482px) and (max-width: 767px){
     form input{
         width: 60vw;
