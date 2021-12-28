@@ -83,6 +83,10 @@ span{
     outline: none;
 }
 
+svg{
+    pointer-events: none;
+}
+
 .todo-list{
     padding: 0 1rem;
 }
