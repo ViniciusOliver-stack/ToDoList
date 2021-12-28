@@ -80,6 +80,7 @@ span{
 
     border-radius: 50px;
     margin-left: 1rem;
+    outline: none;
 }
 
 .todo-list{
