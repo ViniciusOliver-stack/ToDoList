@@ -41,14 +41,14 @@ function limparTexto(){
 
 function checkAndDelete(e){
     const item = e.target
+    const toDo = item.parentNode
 
     if(item.classList[0] === 'trash-btn'){
         const toDo = item.parentNode
         toDo.remove()
     }
     if(item.classList[0] === 'check-btn'){
-        const checkToDo = item.parentNode
-        checkToDo.classList.toggle('completed')
+        toDo.classList.toggle('completed')
     }
 
    
