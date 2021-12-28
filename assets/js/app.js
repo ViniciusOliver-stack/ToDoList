@@ -5,6 +5,7 @@ const todoList = document.querySelector('.list-todo')
 
 todoBtn.addEventListener('click', addTodo)
 todoBtn.addEventListener('click', limparTexto)
+todoList.addEventListener('click', checkAndDelete)
 
 function addTodo(evento){
     if(todoInput.value === ''){
@@ -38,3 +39,17 @@ function limparTexto(){
     document.querySelector('#input-todo').value = ''
 }
 
+function checkAndDelete(e){
+    const item = e.target
+
+    if(item.classList[0] === 'trash-btn'){
+        const toDo = item.parentNode
+        toDo.remove()
+    }
+    if(item.classList[0] === 'check-btn'){
+        const checkToDo = item.parentNode
+        checkToDo.classList.toggle('completed')
+    }
+
+   
+}
