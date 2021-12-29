@@ -92,13 +92,15 @@ svg{
 }
 
 .check-btn{
-    background-color: var(--bg-btn-success)
+    background-color: var(--bg-btn-success);
 }
 
 .completed{
     text-decoration: line-through;
     opacity: .5;
+    transition: opacity .3s ease;
 }
+
 
 @media(min-width:482px) and (max-width: 767px){
     form input{
