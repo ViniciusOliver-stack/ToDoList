@@ -1,11 +1,14 @@
 const todoInput = document.querySelector('#input-todo')
 const todoBtn = document.querySelector('#btn-todo')
 const todoList = document.querySelector('.list-todo')
+const filterOption = document.querySelector('.todo-filter')
 
 
 todoBtn.addEventListener('click', addTodo)
 todoBtn.addEventListener('click', limparTexto)
 todoList.addEventListener('click', checkAndDelete)
+filterOption.addEventListener('click', filterOp)
+
 
 function addTodo(evento){
     if(todoInput.value === ''){
@@ -50,6 +53,9 @@ function checkAndDelete(e){
     if(item.classList[0] === 'check-btn'){
         toDo.classList.toggle('completed')
     }
+}
 
-   
+            //O event me dá todos os eventos
+function filterOp(event){
+  console.log(event)
 }
