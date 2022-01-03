@@ -7,7 +7,6 @@ const filterOption = document.querySelector('.todo-filter')
 todoBtn.addEventListener('click', addTodo)
 todoBtn.addEventListener('click', limparTexto)
 todoList.addEventListener('click', checkAndDelete)
-filterOption.addEventListener('click', filterOp)
 
 
 function addTodo(evento){
@@ -57,5 +56,27 @@ function checkAndDelete(e){
 
             //O event me dá todos os eventos
 function filterOp(event){
-  console.log(event)
+    const todos = todoList.childNodes
+
+    todos.forEach( (todo)=>{
+
+        switch(event){
+            case 'all':
+                todo.style.display = 'flex'
+                break
+            case 'completed':
+                if(todo.classList.contains('completed')){
+                    todo.style.display = 'flex'
+                }else{
+                    todo.style.display = 'none'
+                }
+                break
+            case 'uncompleted':
+                if(!todo.classList.contains('uncompleted')){
+                    todo.style.display = 'flex'
+                }else{
+                    todo.style.display = 'none'
+                }
+        }
+    })
 }
