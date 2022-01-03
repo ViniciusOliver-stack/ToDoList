@@ -101,6 +101,42 @@ svg{
     transition: opacity .3s ease;
 }
 
+/*Filtro*/
+select{
+    appearance: none;
+    outline: none;
+    border: 1px solid red;
+
+    background: var(--bg);
+    color: var(--text);
+    width: 12.5rem;
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: 600;
+
+    display: flex;
+    justify-self: unset; /*Ajudou a corrigir a posição do elemnto*/
+}
+option{
+    margin: 10px;
+}
+.select{
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.select::after{
+    content: "\25BC";
+    position: absolute;
+    top: -3px;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+    pointer-events: none;
+    transform: all .3s ease;
+}
+
 
 @media(min-width:482px) and (max-width: 767px){
     form input{
