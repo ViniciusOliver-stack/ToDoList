@@ -19,12 +19,18 @@
     </header>
 
     <form>
-        <input type="text" id="input-todo" placeholder="O que voce tem planejado?"
-        >
-
-        <button id="btn-todo">
-           <span>Add Tarefa</span>
+        <input type="text" name="" id="input-todo" placeholder="O que voce tem planejado?">
+        <button type="submit" id="btn-todo">
+            <span>Add Tarefa</span>
         </button>
+
+        <div class="select">
+            <select name="todos" class="todo-filte">
+                <option value="all">Todas tarefas</option>
+                <option value="completed">Tarefa completa</option>
+                <option value="uncompleted">Tarefa incompleta</option>
+            </select>
+        </div>
     </form>
 
     <div class="container">
