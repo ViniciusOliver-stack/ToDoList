@@ -99,6 +99,64 @@ svg{
     transition: opacity .3s ease;
 }
 
+
+/*Modal*/
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.modal-container.mostrar{
+    display: flex; 
+ }
+
+.modal{
+    background: #fff;
+    width: 60%;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0,0,0, .5);
+
+    position: relative;
+}
+
+.btn-fechar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: none;
+    color: #121212;
+    font-weight: 600;
+    border-radius: 0;
+}
+.btn-fechar:hover{
+    background: red;
+    color: white;
+    border-top-right-radius: 10px;
+
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+}
+.btn-delete{
+    background-color: #dc3545;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+
+
+
 /*Filtro*/
 select{
     appearance: none;
