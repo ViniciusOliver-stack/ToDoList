@@ -17,4 +17,8 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 <img  width="50"  
 src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg">
 &nbsp;&nbsp;&nbsp;&nbsp;
+
 </div>
+<br>
+
+> Foi utilizado **LocalStorage** para armazenar as tarefas criadas pelo usuário
