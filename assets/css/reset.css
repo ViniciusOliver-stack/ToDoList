@@ -6,11 +6,11 @@
 }
 
 html{
-    --bg: #121212;
-    --bg-input: #1e1e1e;
-    --bg-btn-trash: #E30425;
+    --bg: #201f1b;
+    --bg-input: #3f3c37;
+    --bg-btn-trash: #e30813;
     --bg-btn-success: #007bff;
-    --text: #FFFFFF;
+    --text: #fff;
     --darker: #1F2937;
     --gray: #e2e2e2;
 
