@@ -49,16 +49,14 @@ span{
     align-items:center;
 }
 .list-todo{
-    min-width: 30%;
+    min-width: 40%;
     list-style: none;
-    background-color: var(--bg-input);
-    border-radius: 15px;
 }
 .todo{
     margin: 1rem;
     padding: .5rem;
     border-radius: 10px;
-    background-color: var(--bg);
+    background-color: var(--bg-input);
     font-size: 1.7rem;
 
 
