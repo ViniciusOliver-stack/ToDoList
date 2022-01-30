@@ -116,12 +116,17 @@ svg{
     text-align: center;
 }
 
+.titulo{
+    color: var(--darker);
+    font-size: 2rem;
+}
+
 .modal-container.mostrar{
     display: flex; 
  }
 
 .modal{
-    background: #fff;
+    background: var(--gray);
     width: 60%;
     min-width: 300px;
     padding: 40px;
@@ -136,25 +141,29 @@ svg{
     right: 0;
     top: 0;
     background: none;
-    color: #121212;
+    border: none;
+    color: var(--black);
     font-weight: 600;
+    font-size: 15px;
     border-radius: 0;
+    padding: 10px;
 }
 .btn-fechar:hover{
-    background: red;
-    color: white;
+    background: var(--bg-btn-trash);
+    color: var(--text);
     border-top-right-radius: 10px;
 
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
 }
-.btn-delete{
-    background-color: #dc3545;
-    width: 40px;
-    height: 40px;
-    margin-bottom: 5px;
+
+.btn-inferior-fechar{
+    margin-top: 30px;
+    border: none;
+    background: none;
+    color: var(--bg-btn-success);
+    font-weight: 600;
+    font-size: 1.5rem;
 }
-
-
 
 
 /*Filtro*/
